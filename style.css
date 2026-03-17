@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  /* font-family: "Roboto", sans-serif; */
-  /* font-family: "PT Sans", sans-serif; */
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: hsl(214, 17%, 92%);
   color: hsl(0, 0%, 100%);
@@ -17,7 +15,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 h1 {
   font-size: 16px;
@@ -40,7 +37,6 @@ span {
 ul {
   list-style: none;
   margin: 25px 20px 25px 20px;
-
 }
 
 li {
@@ -51,6 +47,7 @@ li {
 
 .card-one {
   background-color: hsl(263, 55%, 52%);
+ 
 }
 .card-two {
   background-color: hsl(217, 19%, 35%);
@@ -77,64 +74,38 @@ img {
 }
 
 
-
 @media screen and (min-width: 768px) {
-  ul{
-    max-width: 1200px;
+  ul {
+    max-width: 1100px;
     display: grid;
-  
-    /* grid-template-columns: repeat(2, 1fr 2fr); */
-    /* gap: 0.5rem 0.5rem; */
- 
     grid-template-columns: repeat(4, 1fr);
-
-  
-  
+    grid-auto-rows: auto;
+    gap: 10px;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .first {
-  
+  .card-one {
     grid-column: 1 / 3;
     grid-row: 1;
-
   }
-}
 
-@media screen and (min-width: 768px) {
-  .second {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
+  .card-two {
+    grid-column: 3 / 4;
+    grid-row: 1;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .three {
-grid-column: 4 / 4;
-grid-row: 1 / 3;
-  
-  
+  .card-five {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
   }
-}
-@media screen and (min-width: 768px) {
-  .four {
-    
-    /* grid-column-start: 1;
-    /* grid-column-end: 1;
-    grid-row-start: 1 / span 2; */ */
-}
-}
-@media screen and (min-width: 768px) {
-  .five {
+
+  .card-three {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  .card-four {
     grid-column: 2 / 4;
-  
+    grid-row: 2;
   }
 }
-
-
-
-
 
